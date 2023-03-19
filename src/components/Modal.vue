@@ -37,8 +37,14 @@
 <script>
 export default {
 	name: "SendImgModal",
+	props: {
+		currentUser: {
+			type: Number,
+		},
+	},
 	data() {
 		return {
+			user: 1,
 			value: "",
 			imgSrc: "",
 			time: "",
@@ -53,6 +59,7 @@ export default {
 			if (this.value != "" && this.imgSrc != "") {
 				console.log("modal");
 				const item = {
+					user: 1,
 					value: this.value,
 					imgSrc: this.imgSrc,
 					time: new Date().toLocaleTimeString([], {
