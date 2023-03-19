@@ -1,0 +1,10 @@
+.scale-enter-active,
+.scale-leave-active {
+	transition: 0.2s linear;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+	transform: scale(1.5);
+	opacity: 0;
+}
